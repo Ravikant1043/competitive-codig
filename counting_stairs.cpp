@@ -49,3 +49,20 @@ class Solution
         return dp[n];
     }
 };
+
+
+
+
+// ///////////////////
+//   more optimised one
+int a=1,b=2,c;
+        if(n<=2)return n;
+        // dp[1]=1;
+        // dp[2]=2;
+        
+        for(int i=3;i<=n;i++){
+             c=(a+b)%mod;
+            a=b;
+            b=c;
+        }
+        return c;
