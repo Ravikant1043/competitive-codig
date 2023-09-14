@@ -1,3 +1,12 @@
+/*
+    this is a game theory question
+    the main trick to get a optimal sol is that to give out the optimized out of the 
+        worst cases for all the eggs to be dropped
+    here either i can check after droping a egg that that eggs gets broken or it survives
+        if it survivrs then one case or if it doesn't then one case => and then taking the
+        maximum out of both and after taking the min of all the cases from the first floor 
+        the top floor
+*/
 class Solution
 {
     public:
